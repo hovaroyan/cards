@@ -98,6 +98,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://hovaroyan.github.io/cards/",
+            "name": "cards",
+            "email": "hovaroyan@gmail.com"
+          }
         }
       }
     }
