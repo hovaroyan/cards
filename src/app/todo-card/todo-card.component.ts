@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodoCardComponent implements OnInit {
 
+  card = {
+    title: 'traveling',
+    description: 'travel to Canada',
+    dueDate: 'september 8th',
+  }
+
   constructor() { }
 
   ngOnInit(): void {
