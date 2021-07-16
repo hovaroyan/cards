@@ -1,6 +1,13 @@
-<div class="cardContainer">
-    <h1>Todo</h1>
-    <h4> Title: {{ card.title }} </h4>
-    <p> Info: {{ card.description }} </p>
-    <p> Due Date: {{ card.dueDate }} </p>
+<div class="card-info-container">
+    <div class="card-header">
+        <h1>Todo</h1>
+    </div>
+    <div class="img-container">
+        <img [src]="image"> 
+    </div>
+    <div>
+        <h4> Title: {{ title }} </h4>
+        <p> Info: {{ description }} </p>
+        <p> Due Date: {{ dueDate }} </p>
+    </div>
 </div>

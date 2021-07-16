@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-todo-card',
@@ -6,15 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./todo-card.component.css']
 })
 export class TodoCardComponent implements OnInit {
-
-  card = {
-    title: 'traveling',
-    description: 'travel to Canada',
-    dueDate: 'september 8th',
-  }
+@Input() title = '';
+@Input() description = '';
+@Input() dueDate = '';
+@Input() image = '';
 
   constructor() { }
-
   ngOnInit(): void {
   }
 
