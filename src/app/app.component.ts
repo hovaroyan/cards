@@ -7,5 +7,20 @@ import { CARDS } from './todo-card/cards';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  cards = CARDS
-}
+  cards = CARDS;
+  cardsCount: number = 0;
+
+  handleAdd() {
+    this.cardsCount +=1;
+  }
+
+  handleDelete() {
+    this.cardsCount -=1;
+  }
+
+  handleReset() {
+    this.cardsCount -= this.cardsCount;
+  }
+};
+
+

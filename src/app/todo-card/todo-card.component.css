@@ -1,7 +1,11 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
 .card-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     background-image: linear-gradient(to right top, #124168, #31597c, #4e7390, #6b8da4, #89a7b9);
     border: 1px solid black;
     border-radius: 5px;
@@ -9,6 +13,7 @@
     box-shadow: 1px 7px 14px 0px #000000;
     padding: 10px;
     text-align: left;  
+    width: 100%;
 }
 
 .card-info-container {

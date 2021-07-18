@@ -17,4 +17,29 @@ export const CARDS =[
         description: `attending a friend's wedding party`,
         dueDate: 'october 25th',
     },
+    {
+        image: 'assets/wedding.jpeg',
+        title: 'Party',
+        description: `attending a friend's wedding party`,
+        dueDate: 'october 25th',
+    },
+    {
+        image: 'assets/wedding.jpeg',
+        title: 'Party',
+        description: `attending a friend's wedding party`,
+        dueDate: 'october 25th',
+    },
+    {
+        image: 'assets/wedding.jpeg',
+        title: 'Party',
+        description: `attending a friend's wedding party`,
+        dueDate: 'october 25th',
+    },
+    {
+        image: 'assets/wedding.jpeg',
+        title: 'Party',
+        description: `attending a friend's wedding party`,
+        dueDate: 'october 25th',
+    },
+    
   ];
