@@ -21,7 +21,6 @@ export class AppComponent {
     if(this.cardsCount === 10) {
       this.addDisable = true;
     }
-    console.log(this.cardsCount);
   }
 
   handleDelete() {
@@ -29,15 +28,16 @@ export class AppComponent {
     if(this.cardsCount <=0) {
       this.deleteDisable = false;
     } 
-    console.log(this.cardsCount);
+    this.addDisable = false;
   }
 
   handleReset() {
     this.cardsCount -= this.cardsCount;
     if(this.cardsCount <=0) {
       this.resetDisable = false;
+      this.cardsCount= 0;
     }
-    console.log(this.cardsCount);
+    this.addDisable = false;
   }
 };
 
