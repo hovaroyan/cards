@@ -1,1 +1,15 @@
-<app-todo-card></app-todo-card>
+<div class="main-container">
+    <div class="button-container">
+        <app-button [disabled]="addDisable" color="#4CAF50" textColor="white" text="Add" (click)="handleAdd()"></app-button>
+        <app-button [disabled]="!deleteDisable" color="#f44336" textColor="white" text="Remove" (click)="handleDelete()"></app-button>
+        <app-button [disabled]="!resetDisable" color="black" textColor="white" text="Reset" (click)="handleReset()"></app-button>
+    </div>
+    <div class="cards-main-container">
+        <app-todo-card class="card-container" *ngFor = "let card of cards | slice : 0 : cardsCount"
+        [image] = "card.image"
+        [title] = "card.title"
+        [description] = "card.description"
+        [dueDate] = "card.dueDate" >          
+        </app-todo-card>
+    </div>
+</div>
