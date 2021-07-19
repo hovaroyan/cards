@@ -21,24 +21,30 @@ export class AppComponent {
     if(this.cardsCount === 10) {
       this.addDisable = true;
     }
+    console.log("added");
   }
 
   handleDelete() {
     this.cardsCount -=1;
     if(this.cardsCount <=0) {
       this.deleteDisable = false;
+      this.resetDisable = false;
     } 
     this.addDisable = false;
+    console.log('delete');
+    
   }
 
   handleReset() {
     this.cardsCount -= this.cardsCount;
     if(this.cardsCount <=0) {
       this.resetDisable = false;
-      this.cardsCount= 0;
+        this.cardsCount= 0;
     }
     this.addDisable = false;
-  }
+    this.deleteDisable = false;
+    console.log('reset');
+  }  
 };
 
 
